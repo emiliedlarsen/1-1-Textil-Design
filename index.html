@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Denne attribut definerer sproget på siden -->
+
+<head lang="da">
+    <title>1+1 Textil Design</title>
+
+    <!--Dette meta tag fortæller browseren hvordan det skal håndtere sidens størrelse. "Width=device-witdh", betyder at bredden skal følge bredden på den device man benytter.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Charset atributten angiver tegnkodningen i dokumentet, hvilket gør at vi også kan benytte tegnene Æ og Ø -->
+    <meta charset="utf-8">
+
+    <!-- Dette tag linker min JavaScript fil til html filen-->
+    <link rel="JavaScript" href="main.js">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Dette tag linker mit stylesheet til html filen-->
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+
+    <link href="img/logo.png" rel="icon">
+
+</head>
+
+<body>
+
+    <!------------------------------ NAVIGATION BAR ----------------------------------->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #eaeae2">
+            <a class="navbar-brand" href="index.html">
+                <img class="logoTop" src="img/logo.png" width="100" height="100" alt="">
+            </a>
+            <button class="my-navbar navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.1x1textil.dk/nyheder-fra-1x1textil/" target="_blank">NYHEDER</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WEBSHOP</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="https://www.1x1textil.dk/webshop/" target="_blank">Webshop</a>
+                            <a class="dropdown-item" href="https://www.1x1textil.dk/kunsthaandvaerk-i-butikken/" target="_blank">Kunsthåndværk kategori</a>
+                            <a class="dropdown-item" href="https://www.1x1textil.dk/firmagaver/" target="_blank">Firmagaver</a>
+                            <a class="dropdown-item" href="https://www.1x1textil.dk/produkt-kategori/gavekort/" target="_blank">Gavekort</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">OM 1+1</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="https://www.1x1textil.dk/om-11-textil/" target="_blank">Om 1+1 Textil Design</a>
+                            <a class="dropdown-item" href="https://www.1x1textil.dk/kunsthaandvaerkere-i-butikken/" target="_blank">Kunsthåndværkere</a>
+                            <a class="dropdown-item" href="https://www.1x1textil.dk/forhandlere/" target="_blank">Helene Vonsild</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">KONTAKT</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="kontakt.html">Kontakt</a>
+                            <a class="dropdown-item" href="aebningstider.html">Åbningstider</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Hvad leder du efter?" style="font-family: 'Raleway'">
+                    <button class="btn btn-outline-light my-2 my-sm-0" style="border-color: #500e0f" type="submit">Søg</button>
+                </form>
+            </div>
+        </nav>
+
+    </header>
+
+    <!------------------------------------ GRID ----------------------------------->
+
+    <div class="grid-container">
+
+        <!---------------------------------- SLIDESHOW --------------------------------->
+        <div class="grid-item">
+
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- billeder -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/slide1.jpg" alt="Julepynt">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slide2.jpg" alt="Julepynt">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slide3.jpg" alt="Julepynt">
+                    </div>
+                </div>
+
+
+                <!-- Left and right controls -->
+
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-prev" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+
+
+        <!----------------------- INFO TEXT BOX ---------------------------------->
+        <div class="grid-item">
+
+            <div class="infoText">
+                <img class="tern-baggrund" src="img/baggrunf.jpg">
+                <p class="centered">1+1 textil & design præsenterer og profilerer det bedste indenfor dansk kunsthåndværk og design. Oplev håndlavede unika produkter i keramik, porcelæn, smykker, tørklæder, puder, plaider og meget andet. Alt er håndplukket af butikkens ejer, Tekstildesigner Helene Vonsild, hvis prisvindende og sofistikerede pudekollektioner 1+1 Design kan købes i butikken.</p>
+            </div>
+
+        </div>
+
+        <!------------------------- INSTAGRAM FEED --------------------------->
+
+        <div class="grid-item instaFeedBackground">
+
+            <img class="instaFeed" src="img/instafeed.png">
+
+            <section id="myInstagramFeed" class="row"></section>
+
+            <a href="https://www.instagram.com/1x1textilogdesign/" target="_blank"><button type="button" class="btn-insta"><img class="instaBtn" src="img/instaIcon.png">Følg os på Instagram</button></a>
+
+        </div>
+
+
+
+        <!------------------------------ BESØG OS BILLEDE -------------------------------------->
+
+        <div class="grid-item">
+
+            <div class="infoText">
+                <img class="butikImage" src="img/done.png">
+                <p class="butikText">Besøg os gerne i butikken på Grønnegade!</p>
+            </div>
+
+        </div>
+
+
+        <!------------------------------ TILMELDING NYHEDSBREV -------------------------------------->
+
+
+        <div class="grid-item form-background">
+
+            <h1>Tilmeld dig vores nyhedsbrev</h1>
+
+            <form class="newsLetter">
+                <p class="textForm">Indtast e-mail</p>
+                <input class="nyhed" type="text" placeholder=" * Skal udfyldes">
+            </form>
+
+            <button onclick="myFunction()" type="button" class="btn-form">Tilmeld</button>
+
+        </div>
+
+    </div>
+
+
+    <!-------------------------- FOOTER ------------------------>
+
+    <div class="footerBackground">
+        <footer>
+            <span>1+1 Textil Design |</span>
+            <span>Grønnegade 41 |</span>
+            <span>8000 Aarhus C |</span>
+
+            <br><br>
+
+            <span><img class="footerPhone" src="img/phoneIcon.png">70 20 10 42</span>
+            <span><img class="footerMail" src="img/mailIcon.png">1x1@1x1textil.dk</span>
+        </footer>
+    </div>
+
+
+
+    <script>
+        function myFunction() {
+            alert("Mange tak, du er nu tilmeldt vores nyhedsbrev!");
+        }
+
+    </script>
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then your custom main.js file -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <!-- javascript libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>
